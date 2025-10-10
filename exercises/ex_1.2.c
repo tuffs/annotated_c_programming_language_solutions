@@ -9,7 +9,7 @@
 // For instance, take the string provided from the Exercise 1.1,
 // "hello, world" this can be thought of as an array of characters which
 // are strung together as in the following example:
-// char* arr my_statement = ['h', 'e', 'l', 'l', 'o', ' ', ',', 'w', 'o', 'r', 'l', 'd'];
+// char my_statement[] = ['h', 'e', 'l', 'l', 'o', ' ', ',', 'w', 'o', 'r', 'l', 'd'];
 
 // The C programming language allows for this string of characters which
 // are stored in memory as an array to be REPRESENTED as a string (read again
