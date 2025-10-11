@@ -271,3 +271,4 @@ int main() {
 // they can have a value assigned and that requires a type and a name for the variable, as follows:
 
 // int fahr, celsius;    /* two variables are defined with the comma-delimeter of type int for integer */
+// int lower, uppper, step;
