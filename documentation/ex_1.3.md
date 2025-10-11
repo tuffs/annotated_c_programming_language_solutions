@@ -140,4 +140,14 @@ one of the other (second, third, ...) arguments provided to the string to be pri
 
 assigns the values of our two integers `fahr` and `celsius` to their respective %d reference. A tab `\t` is provided
 between them through its escape sequence. Finally a new-line is provided to terminate each line of output
-and to begin the next.
+and to begin the next. Each of the % construction in the first argument of printf is paired with the corresponding second argument, third argument, etc; each must match up properly by number and type or you will get the wrong answers or values, or your program will not compile!
+
+In addition, it should be stated that `printf` is not a part of the C programming languge itself; there is not an input or output defined in the C programming language itself. printf is just a useful function from the standard IO libary of functions that are normally accessible to C programs. The true way that printf works is actually defined in the ANSI standard, with that said, its properties should be the same when any compiler is used so long as the stdio.h library is available for use and conforms to the ANSI standard. In order to focus on pure C programming the book does not go into much detail concerning Input and Ouput until Chapter 7. Importantly and inversely the `scanf` function is available from the Standard IO Library for reading the input instead of providing output to the console.
+
+As we have discussed, at present, there are a few problems with our temperature conversion program in providing an
+accurate temperature on the decimal point precision level. The authors interestingly are upset with the alignment of
+the values, meaning that they are not aligned to the right instead of the left which is probably a particular issue
+due to the nature of numbers, the way accounting is approached, and general formatting regarding numerical values.
+You will note that when you enter a number value into a cell in the Excel or other spreadsheet program, numerical
+values are always right-aligned. As such we are introduced to the styling and formatting options we have in the
+C programming language.
