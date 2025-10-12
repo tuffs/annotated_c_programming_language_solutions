@@ -151,3 +151,65 @@ due to the nature of numbers, the way accounting is approached, and general form
 You will note that when you enter a number value into a cell in the Excel or other spreadsheet program, numerical
 values are always right-aligned. As such we are introduced to the styling and formatting options we have in the
 C programming language.
+
+In our exercise for this lesson we are making some modifications to the existing, previous version of the Fahr-Celsius
+conversion table for the range of temperatures, 0...300.
+
+In this example we provide some formatting, a title, and increased precision. The example code without
+comments should look like the following code:
+
+```
+```
+```
+#include <stdio.h>
+
+float fahr, celsius;
+int lower, upper, step;
+
+lower = 0;
+upper = 300;
+step = 20;
+
+fahr = lower;
+
+int main() {
+  while(fahr <= upper) {
+    celsius= (5.0/9.0) * (fahr-32.0);
+    printf("%3.0f %6.1f\n", fahr, celsius);
+    fahr += step;
+  }
+
+  return 0;
+}
+```
+```
+```
+
+You will notice one major change in the code I have just provided for the solution, the snippet `fahr += step` is
+indicative of the increment assignment procedure where we take the present value of a variable and increment it
+by the following variable or value we want to assign to our initial variable at the beginning of the statement
+this is known more precisely as the `addition assignment operator`. This shortcuts the need to use the following
+code `fahr = fahr + step` and truncates the statement into a simpler format in my professional opinion.
+
+Likewise, this practice can also be done with most operators such as `*`, `/`, and `-` which are known respectively
+as the `multiplication assignment operator`, `division assignment operator`, and `subtraction assignment operator`.
+
+In addition, we can also perform addition and subtraction by one whole number with `++` and `--` being
+placed either before or after the variable to perform the increment or decrement to. For instance:
+`a++` or `b--` - while this can be done on either side of the variable you will mostly see it
+performed in this manner.
+
+Continuing on with the lesson we are presented with a list of formatting options for different variable types
+in the `printf` statement as substitutional values much like we did with `%d` and `%f` in the past.
+This table is provided again as a reference:
+
+    %d        print as decimal integer
+    %6d       print as decimal integer, at least 6 characters wide (modernly read as: spacing, or padding)
+    %f        print as floating point
+    %6f       print as floating point, at least 6 characters wide
+    %.2f      print as floating point, 2 characters after the decimal point
+    %6.2f     print as floating point, at least 6 wide and 2 after decimal point
+
+With this knowledge, you will have completed the Exercises 1.3 and 1.4 or 1-3, 1-4 in the book. Let's move
+along to the next lesson.
+```
