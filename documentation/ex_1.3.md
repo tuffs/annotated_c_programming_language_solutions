@@ -1,4 +1,4 @@
-# Exercise 1.3, "The C Programming Language"
+# Exercises 1.3, "The C Programming Language" Rev 001
 
 ---
 
@@ -159,7 +159,9 @@ In this example we provide some formatting, a title, and increased precision. Th
 comments should look like the following code:
 
 ```
+
 ```
+
 ```
 #include <stdio.h>
 
@@ -182,7 +184,9 @@ int main() {
   return 0;
 }
 ```
+
 ```
+
 ```
 
 You will notice one major change in the code I have just provided for the solution, the snippet `fahr += step` is
@@ -209,7 +213,3 @@ This table is provided again as a reference:
     %6f       print as floating point, at least 6 characters wide
     %.2f      print as floating point, 2 characters after the decimal point
     %6.2f     print as floating point, at least 6 wide and 2 after decimal point
-
-With this knowledge, you will have completed the Exercises 1.3 and 1.4 or 1-3, 1-4 in the book. Let's move
-along to the next lesson.
-```
