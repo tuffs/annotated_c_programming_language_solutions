@@ -61,3 +61,16 @@ printf("%d\n", age >= 18); // 1 (true), old enough to vote
 printf("%d\n", age < 18);  // 0 (false)
 
 ```
+
+Another common use is checking if a password is long enough:
+
+```c
+
+int passwordLength = 5;
+
+printf("%d\n", passwordLength >= 8); // 0 (false), too short
+printf("%d\n", passwordLength < 8); // 1 (true), needs more characters
+
+```
+
+```
