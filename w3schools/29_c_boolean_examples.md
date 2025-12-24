@@ -47,3 +47,7 @@ int main() {
 }
 
 ```
+
+Booleans are the basis for all comparisons and conditions
+You will learn more about conditions `if...else` in the next chapter.
+
