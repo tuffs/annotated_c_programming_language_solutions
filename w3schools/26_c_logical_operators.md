@@ -36,3 +36,7 @@ printf("Has access: %d\n", isLoggedIn || isAdmin);
 printf("Not logged in: %d\n", !isLoggedIn);
 
 ```
+
+*Remember*: In C, `1` means true and `0` means false. Logical operators
+often become easier to understand once you start using them inside `if`
+statements, which you will learn about in the upcoming chapters.
