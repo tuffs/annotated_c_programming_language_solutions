@@ -72,4 +72,34 @@ if (!(a > b)) {
 
 ```
 
+## Real-Life Example
 
+In real programs, logical operators are often used for access control.
+For example, to get access to a system, there are specific requirements
+which must be true, or flase.
+
+You must be logged in, and then you either need to be an admin, or have
+a high security clearance (level 1 or 2):
+
+```c
+
+#include <stdio.h>
+#include <stdbool.h>
+
+
+int main() {
+
+    bool isLoggedIn = true;
+    bool isAdmin = false;
+    int securityLevel = 3; // 1- highest
+
+    if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+        printf("Access granted!\n");
+    } else {
+        printf("Access denied\n");
+    }
+
+    // Try changing securityLevel and isAdmin to test different outcomes.
+    return 0;
+}
+```
