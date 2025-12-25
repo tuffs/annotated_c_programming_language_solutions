@@ -52,8 +52,34 @@ if (citizenship && (age >= votingAge)) {
 }
 
 ```
+Find out if a number is even or odd.
 
-Find out if a person is old enough to vote, `and` if they are a citizen
-(using nested if statements):
+```c
+
+int myNum = 5;
+
+if (myNum % 2 == 0) {
+    printf("%d is even.\n", myNum);
+} else {
+    printf("%d is odd.\n", myNum);
+}
+
+```
+
+Check the temperature in Celsius
+
+```c
+
+int temperature = 30;
+
+if (temperature < 0) {
+    printf("It's freezing.\n");
+} else if (temperature < 20) {
+    printf("It's cool.\n");
+} else {
+    printf("It's warm.\n");
+}
+
+```
 
 
