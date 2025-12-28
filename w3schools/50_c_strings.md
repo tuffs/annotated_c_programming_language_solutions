@@ -16,6 +16,7 @@ and create an array of characters to make a string in C:
 ```c
 
 char greetings[] = "Hello World!";
+printf("%s\n", greetings);
 
 ```
 
@@ -24,6 +25,7 @@ Note that you have to use double quotes (`" "`).
 ```c
 
 char myString[] = "My Value";
+printf("%s\n", myString);
 
 ```
 
@@ -100,3 +102,21 @@ for (i = 0; i < length; i++) {
 }
 
 ```
+
+## Another Way of Creating Strings
+
+In the examples above, we used a "string literal" to create a string variable. This is the easiest way to create a string in C.
+
+You should also note that you can create a string with a set of characters. This example will produce the same result as the example in the beginning of the chapter.
+
+
+```c
+
+char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+printf("%s", greetings);
+
+```
+
+## Why the `\0` at the end of a character array
+
+This is known as a `null terminating character`, and must be included when creating strings using this method. It tells C that this is the end of the string.
