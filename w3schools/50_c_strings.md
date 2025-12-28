@@ -120,3 +120,23 @@ printf("%s", greetings);
 ## Why the `\0` at the end of a character array
 
 This is known as a `null terminating character`, and must be included when creating strings using this method. It tells C that this is the end of the string.
+
+## Differences
+
+The difference between the two ways of creating strings, is that the first method is easier to write, and you do not have to include the `\0` character, as C will do it for you.
+
+You should note that the size of both arrays is the same: They both have `13 characters` (space also counts as a character by the way), including the `\0` character.
+
+
+```c
+
+char greetings[] = {
+    'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'
+};
+
+char greetings2[] = "Hello World!";
+
+printf("%zu\n", greetings);
+printf("%zu\n", greetings2);
+
+```
