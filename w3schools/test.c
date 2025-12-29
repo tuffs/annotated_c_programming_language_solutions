@@ -1,14 +1,11 @@
 #include <stdio.h>
 
+void calculateSum(int x, int y) {
+  int sum = x + y;
+  printf("The sum of x + y is: %d\n", sum);
+}
+
 int main() {
-
-  int myNumbers[4] = {25,50,75,100};
-  int *p = myNumbers; // start of the array (ref)
-
-  for (int i = 0; i < 4; i++) {
-      printf("%d\n", *p);
-      p++;
-  }
-
+  calculateSum(4,3); // 7 
   return 0;
 }
