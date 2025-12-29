@@ -67,4 +67,56 @@ int main() {
 
 ```
 
-*Note*: that the size of `str1` should be large enough for the result of two strings combined (20, in our example, we gave some additional memory to the original string beyond the scope of what was needed as a buffer).
+*Note*: that the size of `str1` should be large enough for the result
+of two strings combined (20, in our example, we gave some additional
+memory to the original string beyond the scope of what was needed as
+a buffer).
+
+## Copy Strings
+
+To copy the value of one string to another, you can use the `strcpy()`
+function from the string.h header file library of functions.
+
+```c
+
+char str1[20] = "Hello World!";
+char str2[20];
+
+// Copy str1 to str2
+strcpy(str2, str1);
+
+// Print str2
+printf("%s", str2);
+
+```
+
+*Note*: that the size of `str2` or whatevevr string must be large enough
+to store the copied string (20 in our example).
+
+## Compare Strings
+
+To compare two strings, you can use the `strcmp()` function.
+
+It returns `0` if the two strings are equal, otherwise a value that is
+not 0:
+
+```c
+
+char str1[] = "Hello";
+char str2[] = "Hello";
+char str3[] = "Hi";
+
+// Compare str1 and str2, and print the result
+
+printf("%d\n, strcmp(str1,str2)); // Return 0, same data inside string
+
+// Compare str1 and str3, and print the result.
+
+printf("%d\n", strcmp(str1, str3));
+
+```
+
+## Complete String Reference
+
+For a complete reference of string functions, go to:
+[C <string.h> Library Reference](https://www.w3schools.com/c/c_ref_string.php)
