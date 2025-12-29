@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 int main() {
-  int myAge = 43;     // An int variable
-  int* ptr = &myAge;  // Pointer variable, with the name ptr
-                      // that stores the address of myAge
+  
+  int myNumbers[4] = {25,50,75,100};
 
-  // Output the value of myAge (43)
-  printf("%d\n", myAge);
+  // Change the value of the first element to 13
+  *myNumbers = 13;
 
-  // Output the memory address of myAge
-  printf("%p\n", &myAge);
+  // Change the value of the second element to 17
+  *(myNumbers +1) = 17;
 
-  // Output the memory address of myAge with the pointer
-  printf("%p\n", ptr);
+  // Get the value of the 1st element
+  printf("%d\n", *myNumbers);
+
+  // Get the value of the 2nd element
+  printf("%d\n", *(myNumbers + 1));
+
   return 0;
 }
