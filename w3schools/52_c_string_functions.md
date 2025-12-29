@@ -66,3 +66,5 @@ int main() {
 }
 
 ```
+
+*Note*: that the size of `str1` should be large enough for the result of two strings combined (20, in our example, we gave some additional memory to the original string beyond the scope of what was needed as a buffer).
