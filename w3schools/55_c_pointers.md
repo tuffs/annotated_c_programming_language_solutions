@@ -107,4 +107,3 @@ example when working with files and memory management.
 *But be careful*; pointers must be handled with care, since it is
 possible to damage data stored in other memory addresses.
 
-
