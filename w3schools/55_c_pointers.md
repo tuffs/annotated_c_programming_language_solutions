@@ -22,7 +22,7 @@ variable as its value.
 A _pointer variable points_ to a _data type_ (like `int`) of the same
 type, and is created with the `*` operator.
 
-The address of the variable you are working with is assigned to teh
+The address of the variable you are working with is assigned to the
 pointer.
 
 ```c
@@ -98,7 +98,7 @@ Pointers are one of the things that make C stand out from other
 programming languages, like Python or Java.
 
 They are important in C, because they allow us to manipulate the data in
-teh computer's memory. This can reduce the code and improve the
+the computer's memory. This can reduce the code and improve the
 performance. If you are familiar with data structures like lists, trees,
 and graphs, you should know that pointers are especially useful for
 implementing those. And sometimes you even have to use pointers, for
