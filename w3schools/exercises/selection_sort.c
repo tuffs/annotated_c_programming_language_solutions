@@ -22,11 +22,25 @@ int main() {
   int myArr[] = {100,75,50,25,5};
   int arrLength = sizeof(myArr)/sizeof(myArr[0]);
 
+  for (int x = 0; x < arrLength; x++) {
+    if (x == 0) {
+      printf("Original order: [");
+    }
+
+    printf("%d", myArr[x]);
+
+    if (x < arrLength - 1) {
+      printf(", ");
+    } else {
+      printf("]\n");
+    }
+  }
+
   selectionSort(myArr, arrLength);
   
   for (int i = 0; i < arrLength; i++) {
     if (i == 0) {
-      printf("[");
+      printf("Selection Sort Order: [");
     }
 
     printf("%d", myArr[i]);
