@@ -2,22 +2,22 @@
 #include <stddef.h>
 
 // Beautiful var swap!
-static inline void swap_integer(int *a, int *b) {
+static inline void swap(int *a, int *b) {
   int t = *a; *a = *b; *b = t;
 }
 
 // Perfect Selection Sort
 void selection_sort(int arr[], size_t n) {
-  if (n < 2) return;
+  if (n <= 1) return;
 
-  for (size_t i = 0; i + 1 < n; ++i) {
+  for (size_t i = 0; i < n -1; ++i) {
     size_t minIndex = i;
 
     for (size_t j = i + 1; j < n; ++j) {
       if (arr[j] < arr[minIndex]) minIndex = j;
     }
 
-    if (minIndex != i) swap_integer(&arr[i], &arr[minIndex]);
+    if (minIndex != i) swap(&arr[i], &arr[minIndex]);
   }
 }
 
