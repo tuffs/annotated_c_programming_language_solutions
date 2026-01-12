@@ -1,30 +1,32 @@
 #include <stdio.h>
 
-void selectionSort(int arr[], int n) {
-  for (int i = 0; i < n - 1; i++) {
-    int minIndex = i;
+void selection_sort(int arr[], size_t n) {
+  if (n < 2) return;
 
-    for (int j = i + 1; j < n; j++) {
+  for (size_t i = 0; i < n - 1; i++) {
+    size_t minIndex = i;
+
+    for (size_t j = i + 1; j < n; j++) {
       if (arr[j] < arr[minIndex]) {
         minIndex = j;
       }
+    }
 
-      if (minIndex != i) {
-        int temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
-      }
-    } 
+    if (minIndex != i) {
+      int temp = arr[i];
+      arr[i] = arr[minIndex];
+      arr[minIndex] = temp;
+    }
   }
 }
 
 int main() {
   int myArr[] = {200,100,0,-100,-200,-300};
-  int arrLength = sizeof(myArr)/sizeof(myArr[0]);
+  size_t arrLength = sizeof(myArr)/sizeof(myArr[0]);
 
-  selectionSort(myArr, arrLength);
+  selection_sort(myArr, arrLength);
 
-  for (int x = 0; x < arrLength; x++) {
+  for (size_t x = 0; x < arrLength; x++) {
     if (x == 0) {
       printf("[");
     }
