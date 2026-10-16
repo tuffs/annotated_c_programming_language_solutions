@@ -1,3 +1,9 @@
+/**
+  * First example from "The C Programming Language" 
+  * book by K&R. Find the exercises from this book
+  * here.
+  */
+
 #include <stdio.h>
 #define CONV 20 /* Celsius temp to convert*/
 
